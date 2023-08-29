@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://searchengineerwiki.github.io/</loc>
+        <loc>https://searchengineerwiki.com/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/design/</loc>
+        <loc>https://searchengineerwiki.com/design/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/design/web/</loc>
+        <loc>https://searchengineerwiki.com/design/web/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/search/</loc>
+        <loc>https://searchengineerwiki.com/search/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/search/data/</loc>
+        <loc>https://searchengineerwiki.com/search/data/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/search/resources/</loc>
+        <loc>https://searchengineerwiki.com/search/resources/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/tools/</loc>
+        <loc>https://searchengineerwiki.com/tools/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/tools/newsboat/</loc>
+        <loc>https://searchengineerwiki.com/tools/newsboat/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/tools/tmux/</loc>
+        <loc>https://searchengineerwiki.com/tools/tmux/</loc>
     </url>
     <url>
-        <loc>https://searchengineerwiki.github.io/tools/vim/</loc>
+        <loc>https://searchengineerwiki.com/tools/vim/</loc>
     </url>
 </urlset>
