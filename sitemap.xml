@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://searchengineerwiki.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/design/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/design/web/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/search/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/search/data/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/search/resources/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/tools/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/tools/newsboat/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/tools/tmux/</loc>
+    </url>
+    <url>
+        <loc>https://searchengineerwiki.github.io/tools/vim/</loc>
+    </url>
+</urlset>

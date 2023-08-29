@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search Engineer Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a class="backlink" href="/">&lt; back</a>
+      <h1>Tmux</h2>
+
+      <p><a href="https://github.com/tmux/tmux">Tmux</a> is a terminal multiplexer which allows
+multiple terminals to be created within a single screen, as well as detaching
+the terminal and continuing to run it's tasks in the background (allowing you to
+reconnect later)</p>
+<h2 id="installation">Installation</h2>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>$ apt-get install tmux
+</span></code></pre>
+<h2 id="useful-configuration">Useful configuration</h2>
+<h3 id="allow-mouse-usage">Allow mouse usage</h3>
+<p>Setting this allows you to use the mouse to navigate between different panes.</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>set -g mouse on
+</span></code></pre>
+<h3 id="fix-escape-time">Fix escape time</h3>
+<p>When using vim within tmux, there's an issue where the escape time setting in
+tmux makes exiting insert mode in vim via the <code>escape</code> key slow to respond. This
+setting resolves that issue.</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>set -s escape-time 0
+</span></code></pre>
+<h3 id="rebind-the-command-keys-to-match-screen">Rebind the command keys to match screen</h3>
+<p>By default, tmux uses <code>Ctrl+b</code> to issue commands.
+<a href="https://www.gnu.org/software/screen/manual/screen.html">Screen</a>, another
+terminal multiplexer, uses <code>Ctrl+a</code>. I originally used screen, so <code>Ctrl+a</code> feels
+normal to me and this configuration changes that.</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>unbind C-b
+</span><span>set -g prefix C-a
+</span><span>bind C-a send-prefix
+</span></code></pre>
+
+    </div>
+  </body>
+</html>
