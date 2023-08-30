@@ -40,6 +40,34 @@ normal to me and this configuration changes that.</p>
 </span><span>set -g prefix C-a
 </span><span>bind C-a send-prefix
 </span></code></pre>
+<h3 id="rebind-pane-management-keys">Rebind pane management keys</h3>
+<p>I like using <code>-</code> for adding a vertical split, and <code>|</code> for adding a horizontal
+split, so these settings rebind the split keys to those.</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>unbind |
+</span><span>unbind %
+</span><span>unbind -
+</span><span>bind | split-window -h
+</span><span>bind - split-window -v
+</span></code></pre>
+<h3 id="moving-with-vi-keys">Moving with vi keys</h3>
+<p>Allows jumping between panes with <code>Ctrl+a $VI_KEY</code></p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>unbind h
+</span><span>unbind j
+</span><span>unbind k
+</span><span>unbind l
+</span><span>bind -r h select-pane -L
+</span><span>bind -r j select-pane -D
+</span><span>bind -r k select-pane -U
+</span><span>bind -r l select-pane -R
+</span></code></pre>
+<h3 id="initial-pane-setup">Initial pane setup</h3>
+<p>When working in the terminal, it's nice to have a large pane on top (for running
+an editor) with a couple of smaller panes underneath (for various command line
+tools, building, running tests, etc)</p>
+<p>This alias, added to the <code>~/.bashrc</code> file (or wherever is appropriate) will
+setup panes in that style just by using the command <code>t</code>.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">alias </span><span style="color:#8fa1b3;">t</span><span>=&#39;</span><span style="color:#a3be8c;">tmux new-session \; split-window -v \; split-window -h \; resize-pane -D 8 \;</span><span>&#39;
+</span></code></pre>
 
     </div>
   </body>
