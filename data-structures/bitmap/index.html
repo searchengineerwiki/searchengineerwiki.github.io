@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search Engineer Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <a class="backlink" href="/">&lt; back</a>
+      <h1>Bitmap</h2>
+
+      <p>A Bitmap is a data structure that can be used to implement a set over a discrete
+number of items. The <em>bits</em> referred to in it's name are used to represent the
+presence or absence  of items within the set.</p>
+<p>This is useful in the Search context for implementing an <a href="https://en.wikipedia.org/wiki/Inverted_index">Inverted Index or
+Postings List</a>. In this case we
+would create a mapping from a term to the set of documents which contain that
+term.</p>
+<p>Maintaining sets via bitmaps can make the set operations we typically use within
+a search engine quite fast, as we can use <a href="https://en.wikipedia.org/wiki/Bitwise_operation">bitwise
+operations</a> to calculate our
+results. These operations might occur where we handle a boolean search or apply
+filtering to a retrieved set of documents.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bit_array">Wikipedia Bit Array</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bitmap_index">Wikipedia Bitmap Index</a></li>
+</ul>
+<h3 id="libraries">Libraries</h3>
+<ul>
+<li><a href="https://github.com/bodil/bitmaps">Bitmaps</a></li>
+<li><a href="https://github.com/RoaringBitmap/roaring-rs">Roaring Bitmap</a></li>
+</ul>
+
+    </div>
+  </body>
+</html>
