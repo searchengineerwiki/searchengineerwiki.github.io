@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search Engineer Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <a class="backlink" href="/">&lt; back</a>
+      <h1>Relevance</h2>
+
+      <h2 id="tf-idf">TF-IDF</h2>
+<p>TF-IDF, which is a short form of <em>Term Frequency - Inverse Document Frequency</em>,
+is a relevance calculation that can be used to assess how relevant a document is
+to the given query.</p>
+<p>For the keywords in the query, the calculation seeks to reflect each keyword's
+importance to the document being assessed, relative to how often that keyword
+appears across the entire corpus.</p>
+<p>As the name suggests, the calculation is split into 2 components.</p>
+<p><em>Term Frequency</em> measures how often the term under consideration appears in
+the document currently being scored. Basically the more a term appears in a
+document, the more important it is.</p>
+<p>This alone doesn't tell the whole story, as common keywords such as <em>the</em> or
+<em>and</em> are extremely common but don't add a lot of value.</p>
+<p>The other part of the calculation is <em>Inverse Document Frequency</em>, which tells
+us how rare a keyword is across the whole document corpus.</p>
+<p>The main idea behind the calculation is that terms which are frequent in a
+document, but rare across all documents in the corpus are of high relevance
+value.</p>
+<p>There are multiple variants of the calculation's components that have various
+properties, which are detailed on <a href="https://en.wikipedia.org/wiki/Tf-idf">the TF-IDF Wikipedia
+page</a>, but a simple form is:</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>TF * log(N/DF)
+</span><span>
+</span><span>where:
+</span><span>TF = count of current term in this document
+</span><span>DF = count of the number of documents containing this term
+</span><span>N = total number of documents in the corpus
+</span></code></pre>
+<p>This algorithm does have it's draw backs. Since the core of the algorithm is
+based upon term frequency, it's possible to game the algorithm by spamming
+keywords within a document. Similarly shorter documents are penalized simply
+due to the fact that they contain fewer keywords.</p>
+<p>While this calculation isn't used directly in a lot of modern search engines,
+it's important to understand as a baseline introduction as it does underpin some
+of the more advanced algorithms. For example, <a href="https://en.wikipedia.org/wiki/Okapi_BM25">BM25</a>
+is one such algorithm that attempts to address some of the above issues by
+smoothing out the effects of repeated keywords as well as accounting better for
+short documents.</p>
+
+    </div>
+  </body>
+</html>
